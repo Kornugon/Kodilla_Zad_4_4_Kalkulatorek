@@ -215,7 +215,7 @@ def division(a):
 
 
 while True:
-    variables = [] # czyszczenie wynikow na poczatku petli
+    variables.clear() # czyszczenie wynikow na poczatku petli
     math_operation = operation()
     if math_operation == 1:
         logging.debug("Wykonujesz dodawanie:")
@@ -240,4 +240,5 @@ while True:
     if again == "Y":
       continue
     else:
-      break
+      print("Exiting... Bye!")
+      exit()
